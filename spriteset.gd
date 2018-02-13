@@ -26,10 +26,10 @@ func set_layout(sprite_layout):
 func tween_set():
 	var ratio = 0.2
 	var effect = get_node("Tween")
-	effect.interpolate_property(self, "transform/scale",
+	effect.interpolate_property(self, "scale",
 			self.get_scale(), Vector2(ratio, ratio), 0.9,
 			Tween.TRANS_QUAD, Tween.EASE_OUT)
-	effect.interpolate_property(self, "transform/position",
+	effect.interpolate_property(self, "position",
 			self.get_position(), Vector2(0,0), 0.9,
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	effect.start()
